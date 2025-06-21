@@ -1,32 +1,27 @@
 Loan Applicant Analysis Using Basic Statistics and R Visualizations
 
-Description:
-This project demonstrates the application of basic statistical techniques and data visualization in R to explore
-trends in a dataset of loan applicants. It emphasizes the role of descriptive and inferential statistics in
-uncovering patterns, relationships, and potential predictors of loan approval decisions. The workflow includes
-data preprocessing, visual exploration, correlation analysis, and hypothesis testing using a t-test.
+# Loan Approval Data Analysis
 
-Features:
-*Data Import and Preprocessing: Load and structure CSV data for analysis using R.
-*Visualizations: Generate histograms for income and payment behavior, and a boxplot for reliability.
-Correlation Analysis: Build and visualize a Pearson Correlation Matrix to identify strong associations.
-*Statistical Testing: Perform an independent t-test to examine the impact of credit score on loan decisions.
-*Interpretation: Translate statistical output into business-relevant insights for decision making.
+## Description  
+This project analyzes loan applicant data using R to explore how various financial and behavioral factors impact loan approval outcomes. It combines data visualization and statistical testing to reveal key patterns in applicant creditworthiness.
 
-Research Question:
-How do applicant features, specifically credit score, income, reliability, and payment history, influence
-loan approval outcomes?
+## Features  
+The dataset includes:
+- Credit Score  
+- Monthly Income  
+- Reliability Score  
+- Number of Missed or Late Payments  
+- Loan Approval Status (`Make.Loan`)
 
-Analysis:
-*Histograms: Missed/Late Payments: Revealed the distribution of applicant repayment behavior. Most applicants clustered around low
-missed payments, suggesting generally reliable payers.
+## Research Question  
+How do applicant features, specifically credit score, income, reliability, and payment history, influence loan approval decisions?
 
-*Boxplot (Reliability): Provided insight into the central tendency and spread of reliability scores, pinpointing outliers and evaluating
-applicant consistency from a statistical angle.
+## Analysis Overview  
+- Data Import and Preprocessing: Load and structure CSV data for analysis using R.  
+- Visualizations: Generate histograms for income and payment behavior, and a boxplot for reliability.  
+- Heatmap Visualization: Create a Pearson correlation heatmap using `corrplot` to highlight relationships among applicant attributes such as income, reliability, missed payments, and credit scores.  
+- Correlation Analysis: Quantify inter-feature relationships to identify patterns influencing loan approval outcomes.  
+- Statistical Testing: Perform an independent t-test to examine the impact of credit score on loan decisions.  
+- Interpretation: Evaluate the results to understand which applicant traits are most predictive of loan approval and how they interact.
 
-*Pearson Correlation Matrix: Used to identify the relationship between variables. Strong positive correlations (between Credit Score and Reliability) 
-informed which features might be good predictors for loan decisions.
-
-*Independent t-test (Credit Score vs Make Loan): Evaluated whether credit score significantly differs between approved and denied applicants. A statistically significant
-result suggests that credit score plays a pivotal role in determining loan outcomes.
 
