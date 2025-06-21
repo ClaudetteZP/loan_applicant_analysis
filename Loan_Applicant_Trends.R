@@ -11,10 +11,6 @@ hist(payment_data$Number.of.Missed.Late.Payments,
      breaks = 20,
      border = "white")
 
-
-
-
-
 # Histogram: Monthly Income
 hist(data$Monthly.Income,
      main = "Monthly Income Histogram",
@@ -24,12 +20,12 @@ hist(data$Monthly.Income,
      border = "darkgrey")
 
 
-
 # Boxplot of Reliability
 boxplot(data$Reliability,
         main = "Reliability Boxplot",
         ylab = "Reliability Score",
         col = "red")
+
 
 # Load necessary package
 library(corrplot)
@@ -43,7 +39,6 @@ cor_matrix <- cor(num_data, use = "complete.obs")
 
 # Visualize correlation matrix as a heatmap
 corrplot(cor_matrix, method = "color", tl.cex = 0.8, number.cex = 0.7)
-
 
 # Ensure Make.Loan is treated as a factor
 data$Make.Loan <- as.factor(data$Make.Loan)
